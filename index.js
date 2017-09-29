@@ -8,7 +8,7 @@ app.listen(port, () => console.log(`Listening on PORT: ${port}`));
 
 app.get('/', (req, res) => {
   const agent = useragent.parse(req.headers['user-agent']);
-  const ip = req.headers['x-forwarded-for'];
+  let ip = req.headers['x-forwarded-for'];
   if (ip) {
     const list = ip.split(',');
     ip = list[list.length - 1];
