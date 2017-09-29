@@ -4,7 +4,7 @@ const useragent = require('useragent');
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, () => console.log(`Listening on PORT: `${port}));
+app.listen(port, () => console.log(`Listening on PORT: ${port}`));
 
 app.get('/', (req, res) => {
   const agent = useragent.parse(req.headers['user-agent']);
