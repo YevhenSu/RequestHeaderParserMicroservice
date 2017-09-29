@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/YevhenSu/RequestHeaderParserMicroservice/issues"
   },
-  "homepage": "https://github.com/YevhenSu/RequestHeaderParserMicroservice#readme"
+  "homepage": "https://github.com/YevhenSu/RequestHeaderParserMicroservice#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "useragent": "^2.1.8"
+  }
 }
